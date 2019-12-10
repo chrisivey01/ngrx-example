@@ -1,0 +1,12 @@
+<!-- <<input #userSearch> -->
+<!-- <div *ngIf="users$ | async as user; else loading"> -->
+
+  <ul>
+  <li *ngFor="let user of data$ | async">{{user.name}}</li>
+
+  </ul>
+<!-- </div> -->
+
+<ng-template #loading>
+  <div>Loading ...</div>
+</ng-template>
